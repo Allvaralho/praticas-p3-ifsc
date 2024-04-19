@@ -1,6 +1,7 @@
 package atividade;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class MainProdutos {
 	public static void main(String[] args) {
@@ -68,13 +69,17 @@ public class MainProdutos {
 			
 		}
 		System.out.println("");
+		System.out.println("=============================================================");
 		System.out.println("Desktops: ");
 		for (Desktop desktop : desktops) {
 			
 		 System.out.println(desktop.getFabricante());
 		 System.out.println(desktop.getCodBarras());
 		 System.out.println(desktop.getGamer());
-		 System.out.println(desktop.getPecas());
+		 for (String peca : desktop.getPecas()) {
+			System.out.println(peca);
+			
+		}
 		}
 		
 		
